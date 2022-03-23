@@ -1,7 +1,10 @@
 exports.paginaInicial = (req, res) => {
     res.render('index');
+    return;
 };
 
 exports.trataPost = (req, res) => {
-    res.send('Eu sou sua rota de poste');
+    res.send(req.body);
+    return;
 };
+
